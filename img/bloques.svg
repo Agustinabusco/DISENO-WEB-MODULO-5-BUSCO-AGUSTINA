@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#fff7d6"/>
+<circle cx="110" cy="90" r="55" fill="#38bdf8" opacity=".35"/>
+<circle cx="700" cy="490" r="80" fill="#f472b6" opacity=".25"/>
+<rect x="155" y="280" width="180" height="180" rx="22" fill="#f472b6"/>
+<rect x="315" y="205" width="180" height="180" rx="22" fill="#4f46e5"/>
+<rect x="475" y="280" width="180" height="180" rx="22" fill="#22c55e"/>
+<circle cx="245" cy="370" r="40" fill="#ffffff" opacity=".85"/>
+<polygon points="405,255 450,335 360,335" fill="#ffffff" opacity=".9"/>
+<rect x="535" y="340" width="60" height="60" rx="8" fill="#ffffff" opacity=".9"/>
+<text x="400" y="525" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#312e81">Bloques de construcción</text>
+</svg>

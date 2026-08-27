@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Juegolandia - Juguetería con opciones para aprender, imaginar y divertirse.">
+  <title>Juegolandia | Juguetería</title>
+
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIINfQ3yn5ceB6lO8tTbMZxJQtZtqkz9jG0="
+        crossorigin="">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="encabezado">
+    <a class="marca" href="#inicio" aria-label="Ir al inicio de Juegolandia">
+      <span class="marca-icono">★</span>
+      <span>Juegolandia</span>
+    </a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <button class="nav-btn activo" data-seccion="inicio">Inicio</button>
+      <button class="nav-btn" data-seccion="servicios">Servicios</button>
+      <button class="nav-btn" data-seccion="contacto">Contacto</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="seccion visible" aria-labelledby="titulo-inicio">
+      <div class="hero">
+        <div class="hero-texto">
+          <p class="etiqueta">Juguetes para crecer jugando</p>
+          <h1 id="titulo-inicio">Un mundo de diversión en un solo lugar</h1>
+          <p>
+            En Juegolandia elegimos juguetes que invitan a imaginar, crear,
+            compartir y aprender. Tenemos propuestas para distintas edades,
+            desde juegos de construcción hasta opciones creativas y de movimiento.
+          </p>
+          <button id="btn-descubrir" class="btn-principal">Descubrir Juegolandia</button>
+        </div>
+
+        <div class="hero-ilustracion" aria-hidden="true">
+          <div class="cubo cubo-1">J</div>
+          <div class="cubo cubo-2">U</div>
+          <div class="cubo cubo-3">E</div>
+          <div class="pelota-deco"></div>
+        </div>
+      </div>
+
+      <div class="bloque-titulo">
+        <p class="etiqueta">Manipulación avanzada del DOM</p>
+        <h2>Conocé nuestra propuesta</h2>
+        <p>
+          Las cajas de esta sección se generan desde JavaScript. Al hacer clic en cada una,
+          el contenido cambia dinámicamente sin recargar la página.
+        </p>
+      </div>
+
+      <div id="presentacion-cards" class="presentacion-cards"></div>
+
+      <article id="detalle-dinamico" class="detalle-dinamico" aria-live="polite">
+        <span class="detalle-icono">✨</span>
+        <div>
+          <h3>Elegí una tarjeta</h3>
+          <p>Hacé clic en cualquiera de las cajas para conocer más sobre Juegolandia.</p>
+        </div>
+      </article>
+
+      <section id="panel-extra" class="panel-extra oculto" aria-live="polite">
+        <h2>¿Qué nos hace diferentes?</h2>
+        <p>
+          Buscamos que cada visita sea simple y entretenida: productos organizados,
+          información clara y una experiencia visual pensada para toda la familia.
+        </p>
+        <div class="mini-datos">
+          <span><strong>+150</strong> opciones de juego</span>
+          <span><strong>3</strong> sucursales</span>
+          <span><strong>6</strong> categorías destacadas</span>
+        </div>
+      </section>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="seccion" aria-labelledby="titulo-servicios">
+      <div class="bloque-titulo centrado">
+        <p class="etiqueta">Eventos y animaciones</p>
+        <h1 id="titulo-servicios" class="titulo-galeria">Nuestros juguetes destacados</h1>
+        <p>
+          Pasá el mouse por las imágenes y hacé clic para ver cada producto en mayor tamaño.
+        </p>
+      </div>
+
+      <div id="galeria" class="galeria" aria-label="Galería de juguetes"></div>
+
+      <div class="servicios-info">
+        <article>
+          <span>🎁</span>
+          <h3>Regalos</h3>
+          <p>Opciones para cumpleaños, celebraciones y fechas especiales.</p>
+        </article>
+        <article>
+          <span>🧠</span>
+          <h3>Juegos didácticos</h3>
+          <p>Propuestas para aprender mientras se juega y se experimenta.</p>
+        </article>
+        <article>
+          <span>🚚</span>
+          <h3>Envíos</h3>
+          <p>Coordinación de entregas dentro de Montevideo y zona metropolitana.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+      <div class="bloque-titulo">
+        <p class="etiqueta">Biblioteca JavaScript: Leaflet.js</p>
+        <h1 id="titulo-contacto">Estamos cerca tuyo</h1>
+        <p>
+          Juegolandia cuenta con 3 sucursales. En el mapa podés ver sus ubicaciones
+          y, si lo deseás, usar la geolocalización del navegador para ver tu posición.
+        </p>
+      </div>
+
+      <div class="contacto-grid">
+        <div>
+          <div class="datos-contacto">
+            <article class="dato-card">
+              <span>📍</span>
+              <div>
+                <h3>Sucursal Centro</h3>
+                <p>Av. 18 de Julio 1234, Montevideo</p>
+              </div>
+            </article>
+            <article class="dato-card">
+              <span>📍</span>
+              <div>
+                <h3>Sucursal Pocitos</h3>
+                <p>Av. Brasil 2450, Montevideo</p>
+              </div>
+            </article>
+            <article class="dato-card">
+              <span>📍</span>
+              <div>
+                <h3>Sucursal Ciudad de la Costa</h3>
+                <p>Av. Giannattasio 18000, Canelones</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="contacto-directo">
+            <p><strong>Teléfono:</strong> 2900 2026</p>
+            <p><strong>WhatsApp:</strong> 099 123 456</p>
+            <p><strong>Correo:</strong> hola@juegolandia.uy</p>
+            <p><strong>Horario:</strong> lunes a sábado, 10:00 a 19:00</p>
+          </div>
+
+          <button id="btn-ubicacion" class="btn-secundario">Mostrar mi ubicación</button>
+          <p id="estado-ubicacion" class="estado-ubicacion" aria-live="polite"></p>
+        </div>
+
+        <div class="mapa-contenedor">
+          <div id="map" aria-label="Mapa de sucursales de Juegolandia"></div>
+          <p class="nota-mapa">
+            Las direcciones y datos de contacto son ficticios y fueron creados únicamente para esta actividad académica.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE GALERÍA -->
+  <div id="modal-imagen" class="modal-imagen" role="dialog" aria-modal="true" aria-hidden="true">
+    <button id="cerrar-modal" class="cerrar-modal" aria-label="Cerrar imagen">&times;</button>
+    <div class="modal-contenido">
+      <img id="imagen-ampliada" src="" alt="">
+      <div class="modal-texto">
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-descripcion"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Juegolandia · Proyecto académico de Introducción al Diseño Web · Módulo 5</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>

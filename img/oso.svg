@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#fff7ef"/>
+<circle cx="300" cy="160" r="55" fill="#c08457"/>
+<circle cx="500" cy="160" r="55" fill="#c08457"/>
+<circle cx="400" cy="250" r="150" fill="#d69b6c"/>
+<ellipse cx="400" cy="420" rx="165" ry="135" fill="#d69b6c"/>
+<circle cx="345" cy="230" r="17" fill="#312e81"/>
+<circle cx="455" cy="230" r="17" fill="#312e81"/>
+<ellipse cx="400" cy="290" rx="62" ry="48" fill="#f4d2b4"/>
+<circle cx="400" cy="276" r="17" fill="#312e81"/>
+<path d="M370 315 Q400 340 430 315" fill="none" stroke="#312e81" stroke-width="9" stroke-linecap="round"/>
+<ellipse cx="250" cy="420" rx="65" ry="110" fill="#c08457" transform="rotate(18 250 420)"/>
+<ellipse cx="550" cy="420" rx="65" ry="110" fill="#c08457" transform="rotate(-18 550 420)"/>
+<text x="400" y="555" text-anchor="middle" font-family="Arial" font-size="46" font-weight="700" fill="#312e81">Oso de peluche</text>
+</svg>

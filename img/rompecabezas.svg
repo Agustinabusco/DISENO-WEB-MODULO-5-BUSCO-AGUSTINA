@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#f7f3ff"/>
+<g transform="translate(180 120)">
+  <path d="M0 0h160v65c-22-14-55 2-55 30s33 44 55 30v75H0v-70c18 10 45-3 45-27S18 66 0 77z" fill="#f472b6"/>
+  <path d="M165 0h155v74c18-10 45 3 45 27s-27 37-45 27v72H165v-68c25 12 55-5 55-32s-30-44-55-32z" fill="#38bdf8"/>
+  <path d="M0 205h160v-67c22 14 55-2 55-30s-33-44-55-30v-73h0v200H0v-65c-20 12-48-2-48-28s28-40 48-28z" fill="#22c55e" transform="translate(0 0)"/>
+  <path d="M165 205h155v-70c-18 10-45-3-45-27s27-37 45-27V5h0v200H165v-66c-24 12-54-5-54-31s30-43 54-31z" fill="#fbbf24"/>
+</g>
+<text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#312e81">Rompecabezas creativo</text>
+</svg>
